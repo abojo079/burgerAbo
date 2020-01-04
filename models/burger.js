@@ -1,3 +1,3 @@
-const orm = require("../config/orm");
+const orm = require("../config/orm.js");
 
-module.exports = burger.js;
+module.exports = burger;
