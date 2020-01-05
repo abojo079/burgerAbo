@@ -41,7 +41,7 @@ const orm = {
   },
 
  insertOne: function(table, cols, vals, cb) {
-    cosnt queryString = "INSERT INTO " + table;
+    const queryString = "INSERT INTO " + table;
 
     queryString += " (";
     queryString += cols.toString();
