@@ -6,17 +6,11 @@
       {{> cats/cat-block sleep=true}}
     {{/unless}}
   {{/each}}
-<ul>
+<ul-->
 
 
 
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul-->
+
 
 <body>
     <div class="jumbotron">
@@ -31,7 +25,7 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
       </div>
-<table class="table" style="width: 450px; border:thin; border:solid grey; height: 300px;">
+<table class="table" style="width: 450px; border:thin; border:solid rgb(209, 204, 204); height: 300px;">
   <thead>
     <tr>
       <th scope="col">Choice</th>
@@ -40,7 +34,13 @@
   <tbody>
     <tr>
       <th scope="row"></th>
-     
+     <ul>
+  {{#each burger}}
+    {{#unless devoured}}
+    <span> {{this.id}} {{this.burger_name}}</span> 
+    
+  {{/each}}
+</ul>
     </tr>
    
   </tbody>
